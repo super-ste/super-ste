@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="super-ste.github.io : This is my first test with GitHub and three.js" />
+
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+
+    <title>SuperSte ... how I see the world in 3D</title>
+  </head>
+
+  <body>
+
+    <!-- HEADER -->
+    <div id="header_wrap" class="outer">
+        <header class="inner">
+          <a id="forkme_banner" href="https://github.com/super-ste/three.js">View on GitHub</a>
+
+          <h1 id="project_title">SuperSte</h1>
+          <h2 id="project_tagline">This is my first test with GitHub and three.js</h2>
+
+            <section id="downloads">
+              <a class="zip_download_link" href="https://github.com/super-ste/three.js/zipball/master">Download this project as a .zip file</a>
+              <a class="tar_download_link" href="https://github.com/super-ste/three.js/tarball/master">Download this project as a tar.gz file</a>
+            </section>
+        </header>
+
+        <div class="meny">
+      <h2>More Experiments</h2>
+      <ul>
+        <li><a href="http://lab.hakim.se/avgrund/">Avgrund</a></li>
+        <li><a href="http://lab.hakim.se/radar/">Radar</a></li>
+        <li><a href="http://lab.hakim.se/forkit-js/">forkit.js</a></li>
+        <li><a href="http://lab.hakim.se/scroll-effects/">stroll.js</a></li>
+        <li><a href="http://lab.hakim.se/zoom-js">zoom.js</a></li>
+        <li><a href="http://lab.hakim.se/reveal-js">reveal.js</a></li>
+        <li><a href="http://itunes.apple.com/us/app/sinuous/id543097218">Sinuous for iOS</a></li>
+        <li><a href="http://hakim.se/experiments/css/domtree/">DOM Tree</a></li>
+        <li><a href="http://hakim.se/experiments/css/holobox/">Holobox</a></li>
+        <li><a href="http://hakim.se/experiments/html5/404/netmag.html">404</a></li>
+      </ul>
+    </div>
+
+    <div class="meny-arrow"></div>
+
+    </div>
+
+    <script src="js/meny.js"></script>
+    <script>
+      // Create an instance of Meny
+      var meny = Meny.create({
+        // The element that will be animated in from off screen
+        menuElement: document.querySelector( '.meny' ),
+
+        // The contents that gets pushed aside while Meny is active
+        contentsElement: document.querySelector( '.contents' ),
+
+        // [optional] The alignment of the menu (top/right/bottom/left)
+        position: Meny.getQuery().p || 'left',
+
+        // [optional] The height of the menu (when using top/bottom position)
+        height: 200,
+
+        // [optional] The width of the menu (when using left/right position)
+        width: 260,
+
+        // [optional] Distance from mouse (in pixels) when menu should open
+        threshold: 40,
+
+        // [optional] Use mouse movement to automatically open/close
+        mouse: true,
+
+        // [optional] Use touch swipe events to open/close
+        touch: true
+      });
+
+      // API Methods:
+      // meny.open();
+      // meny.close();
+      // meny.isOpen();
+
+      // Events:
+      // meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
+      // meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+
+      // Embed an iframe if a URL is passed in
+      if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
+        var contents = document.querySelector( '.contents' );
+        contents.style.padding = '0px';
+        contents.innerHTML = '<div class="cover"></div><iframe src="'+ Meny.getQuery().u +'" style="width: 100%; height: 100%; border: 0; position: absolute;"></iframe>';
+      }
+    </script>
+
+    
+    <!-- MAIN CONTENT -->
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h3>
+<a name="welcome-to-github-pages" class="anchor" href="#welcome-to-github-pages"><span class="octicon octicon-link"></span></a>Welcome my first GitHub Page</h3>
+
+<p>Please check below for example</p>
+
+<h3>
+<a name="support-or-contact" class="anchor" href="#support-or-contact"><span class="octicon octicon-link"></span></a>Support or Contact</h3>
+
+<a href="http://super-ste.github.io/My-Experiment-with-three.js/examples/index.html">Examples</a>
+      </section>
+    </div>
+
+    <!-- FOOTER  -->
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">super-ste.github.io maintained by <a href="https://github.com/super-ste">super-ste</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+
+    
+
+  </body>
+</html>
