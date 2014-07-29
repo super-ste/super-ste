@@ -116,8 +116,10 @@
 			// meny.isOpen();
 
 			// Events:
-			// meny.addEventListener( 'open', function(){ console.log( 'open' ); } );
-			// meny.addEventListener( 'close', function(){ console.log( 'close' ); } );
+			// meny.addEventListener( 'open', function(){ console.log( ' do something on open' ); } );
+			// meny.addEventListener( 'close', function(){ console.log( ' do something on close' ); } );
+          	// meny.addEventListener( 'opened', function(){ console.log( ' do something right after meny is opened and transitions finished' ); } );
+			// meny.addEventListener( 'closed', function(){ console.log( ' do something right after meny is closed and transitions finished' ); } );
 
 			// Embed an iframe if a URL is passed in
 			if( Meny.getQuery().u && Meny.getQuery().u.match( /^http/gi ) ) {
