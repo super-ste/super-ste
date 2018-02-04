@@ -1,0 +1,8 @@
+title: super-ste.github.io
+description: This is my first test with GitHub and three.js
+google_analytics: SuperSte
+show_downloads: true
+theme: jekyll-theme-merlot
+
+gems:
+  - jekyll-mentions
